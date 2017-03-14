@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,23 +22,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7l0-zj-m2q">
-                                <rect key="frame" x="108" y="262" width="159" height="143"/>
+                                <rect key="frame" x="110" y="256" width="155" height="155"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                <state key="normal" title="Record" image="recordButton"/>
+                                <state key="normal" image="recordButton"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8qB-rN-UkU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TabToRecord" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIN-US-nEa">
-                                <rect key="frame" x="137" y="431" width="101" height="21"/>
+                                <rect key="frame" x="137" y="437" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytq-i9-oso" userLabel="stopRecording">
-                                <rect key="frame" x="135.5" y="492" width="104" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.49942766931499516" blue="0.51314578637053176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="StartRecording"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytq-i9-oso" userLabel="stopRecording">
+                                <rect key="frame" x="152" y="466" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="KrN-4O-qtg"/>
+                                    <constraint firstAttribute="height" constant="70" id="s6q-ma-nVt"/>
+                                </constraints>
+                                <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T0O-09-d60"/>
                                 </connections>
@@ -47,15 +49,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ytq-i9-oso" firstAttribute="centerX" secondItem="GIN-US-nEa" secondAttribute="centerX" id="2nc-Ds-1xG"/>
-                            <constraint firstItem="GIN-US-nEa" firstAttribute="top" secondItem="7l0-zj-m2q" secondAttribute="bottom" constant="26" id="C2l-xk-B3W"/>
-                            <constraint firstItem="7l0-zj-m2q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="92" id="EwO-1E-7BJ"/>
-                            <constraint firstItem="GIN-US-nEa" firstAttribute="centerX" secondItem="7l0-zj-m2q" secondAttribute="centerX" id="J7e-qi-I6E"/>
-                            <constraint firstItem="7l0-zj-m2q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KXB-uX-ku5"/>
-                            <constraint firstItem="7l0-zj-m2q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nze-lI-G4f"/>
-                            <constraint firstItem="7l0-zj-m2q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="242" id="Oa8-fU-pnr"/>
-                            <constraint firstItem="GIN-US-nEa" firstAttribute="top" secondItem="7l0-zj-m2q" secondAttribute="bottom" constant="26" id="UAa-HW-mCP"/>
-                            <constraint firstItem="ytq-i9-oso" firstAttribute="top" secondItem="GIN-US-nEa" secondAttribute="bottom" constant="40" id="cxy-nI-sm5"/>
+                            <constraint firstItem="ytq-i9-oso" firstAttribute="centerX" secondItem="GIN-US-nEa" secondAttribute="centerX" id="2eV-ff-afz"/>
+                            <constraint firstItem="GIN-US-nEa" firstAttribute="top" secondItem="7l0-zj-m2q" secondAttribute="bottom" constant="26" id="BIp-Aa-2Cs"/>
+                            <constraint firstItem="7l0-zj-m2q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Skn-zC-9SZ"/>
+                            <constraint firstItem="7l0-zj-m2q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T5L-Er-qHt"/>
+                            <constraint firstItem="GIN-US-nEa" firstAttribute="centerX" secondItem="7l0-zj-m2q" secondAttribute="centerX" id="hLT-ES-4en"/>
+                            <constraint firstItem="ytq-i9-oso" firstAttribute="top" secondItem="GIN-US-nEa" secondAttribute="bottom" constant="8" symbolic="YES" id="sjW-6D-prR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -70,6 +69,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Stop" width="155" height="155"/>
         <image name="recordButton" width="155" height="155"/>
     </resources>
 </document>
