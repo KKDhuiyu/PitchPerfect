@@ -15,6 +15,7 @@
 		067B3BAD1E77CEC400A8D550 /* PitchPerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B3BAC1E77CEC400A8D550 /* PitchPerfectTests.swift */; };
 		067B3BB81E77CEC400A8D550 /* PitchPerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B3BB71E77CEC400A8D550 /* PitchPerfectUITests.swift */; };
 		06FA8D741E78EA2100CD4E21 /* PlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FA8D731E78EA2100CD4E21 /* PlaybackViewController.swift */; };
+		06FA8D761E790F2A00CD4E21 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FA8D751E790F2A00CD4E21 /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		067B3BB71E77CEC400A8D550 /* PitchPerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPerfectUITests.swift; sourceTree = "<group>"; };
 		067B3BB91E77CEC400A8D550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06FA8D731E78EA2100CD4E21 /* PlaybackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaybackViewController.swift; sourceTree = "<group>"; };
+		06FA8D751E790F2A00CD4E21 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				067B3BA01E77CEC300A8D550 /* LaunchScreen.storyboard */,
 				067B3BA31E77CEC300A8D550 /* Info.plist */,
 				06FA8D731E78EA2100CD4E21 /* PlaybackViewController.swift */,
+				06FA8D751E790F2A00CD4E21 /* PlaySoundsViewController+Audio.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06FA8D741E78EA2100CD4E21 /* PlaybackViewController.swift in Sources */,
+				06FA8D761E790F2A00CD4E21 /* PlaySoundsViewController+Audio.swift in Sources */,
 				067B3B9A1E77CEC300A8D550 /* RecordViewController.swift in Sources */,
 				067B3B981E77CEC300A8D550 /* AppDelegate.swift in Sources */,
 			);
